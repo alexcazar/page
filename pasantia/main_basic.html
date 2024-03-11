@@ -1,0 +1,64 @@
+<!--declarar tipo de documento y lenguaje-->
+<!DOCTYPE html lang="es">
+    <header>
+        <!--titulo y configuracion-->
+        <title>Formulario</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    </header>
+    <style>
+        .h1{
+            text-decoration-color: rgb(0, 136, 255);
+        }
+    </style>
+    <script>
+    </script>
+    <body class="is-preload">
+        <h1>1</h1>
+        <h2>2</h2>
+        <p>3</p>
+    </body>
+    <div class="form-popup" id="myForm">
+    <form action="conection.php" method="post" class="form-container">
+        <!--
+            variables:
+            -nombres
+            -apellidos
+            -numerocedula
+            -tel
+            -correo
+            -edad
+            -genero
+        -->
+        <br>
+        <labed for="nombres" class="">Nombres</labed>
+        <input type="text" id="nombres" name="nombres" maxlength="" required></input>
+        <br>
+        <labed for="apellidos" class="">Apellidos</labed>
+        <input type="text" id="apellidos" name="apellidos" maxlength="" required></input>
+        <br>
+        <labed for="correo" class="">Email</labed>
+        <input type="email" id="correo" name="correo" maxlength="" required></input>
+        <br>
+        <labed for="edad" class="">Edad</labed>
+        <input type="date" id="edad" name="edad" min="" max="" required></input>
+        <br>
+        <labed for="" class="">Cedula</labed>
+        <input type="text" id="" name="" min="999999999999" max="9999999999999" required></input>
+        <br>
+        <labed for="tel" class="">Telefono</labed>
+        <input type="int" id="tel" name="tel" min="" max="" required></input>
+        <br>
+        <label for="genero">Genero</label>
+        <select name="int" id="genero" required>
+            <option value="0" selected>Seleccione una opcion</option>
+            <option value="1">Hombre</option>
+            <option value="2">Mujer</option>
+        </select>
+        <!--Boton-->
+        <button class="button" data-toggle="collapse" onclick="myFunction()">Guardar</button>
+    </form>
+    </div>
+    <img src="images/clinica.JPG" alt="logo">
+</html>
